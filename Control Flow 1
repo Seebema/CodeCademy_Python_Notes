@@ -1,0 +1,193 @@
+#BOOLEAN
+# set_to_true = True
+# set_to_false = False
+
+
+# bool_one = 5 != 7 
+# bool_two = 1 + 1 != 2
+# bool_three = 3 * 3 == 9
+
+# print(bool_one)    # True
+ 
+# print(bool_two)    # False
+ 
+# print(bool_three)  # True
+
+# #EXERCISE
+# my_baby_bool = "true"
+# my_baby_bool_two = True
+# print(type(my_baby_bool)) # <class 'str'>
+# print(type(my_baby_bool_two)) # <class 'bool'>
+
+# user_name = "Dave"
+# if user_name == "Dave":
+#     print("Get off my computer Dave!")
+# else:
+#     print("Access granted.")
+
+# if user_name == 'angela_catlady_87':
+#     print("I know it is you, Dave! Go away!")
+# else:
+#     print("Hello, Dave. What is the password? It is a fish.")
+
+# if user_name == 'seebema':
+#     print('Welcome back, Seebema!')
+# else:
+#     print('I don\'t think I\'ve seen you around here before, ' + user_name)
+
+# ##############################################################################
+
+# #RELATIONAL OPERATORS
+# # < less than
+# # > greater than
+# # <= less than or equal to
+# # >= greater than or equal to
+# # == equal to
+# # != not equal to
+
+# age = 12
+# if age < 13:
+#     print("You are a child")
+# else: print("You are not a child and can watch the movie")
+
+# #EXERCISE
+
+# x = 20
+# y = 20
+
+# if x == y:
+#     print("These numbers are the same")
+# else:
+#     print("These numbers are different")    
+
+
+# credits = 120
+
+# # Write the second if statement here:
+
+# if credits >= 120:
+#     print("You have enough credits to graduate!")
+
+
+
+#    #BOOLEAN OPERATORS
+# # and - both conditions must be true
+# # or - either condition must be true
+# # not - reverses the boolean value
+
+# (1 + 1 == 2) and (2 + 2 == 4)   # True
+ 
+# (1 > 9) and (5 != 6)            # False
+ 
+# (1 + 1 == 2) and (2 < 1)        # False
+ 
+# (0 == 10) and (1 + 1 == 1)      # False
+
+# if credits >= 120 and gpa >= 2.0:
+#   print("You meet the requirements to graduate!")
+
+
+# True or (3 + 4 == 7)    # True
+# (1 - 1 == 0) or False   # True
+# (2 < 0) or True         # True
+# (3 == 8) or (3 > 4)     # False
+
+
+
+# credits = 118
+# gpa = 2.0
+
+# if credits >= 120 or gpa >=2.0:
+#     print("You meet at least one of the requirements to graduate!")
+
+
+
+# not True == False
+# not False == True
+# not (1 + 1 == 2) == False
+
+
+# credits = 120
+# gpa = 1.8
+# if not credits >= 120:
+#     print("You do not have enough credits to graduate.")
+# if not gpa >= 2.0:
+#     print("Your GPA is not high enough to graduate.")
+# if not credits >= 120 and not gpa >= 2.0:
+#     print("You do not meet either requirement to graduate!")
+
+# ##############################################################################
+
+# #ELSE 
+# if age >= 13:
+#   print("Access granted.")
+# else:
+#   print("Sorry, you must be 13 or older to watch this movie.")
+
+# credits = 120
+# gpa = 1.9
+
+# if (credits >= 120) and (gpa >= 2.0):
+#   print("You meet the requirements to graduate!")
+# else:
+#   print("You do not meet the requirements to graduate.")
+
+# ##############################################################################
+
+# #ELIF
+# donation = 1000
+# print("Thank you for the donation!")
+ 
+# if donation >= 1000:
+#   print("You've achieved platinum status")
+# elif donation >= 500:
+#   print("You've achieved gold donor status")
+# elif donation >= 100:
+#   print("You've achieved silver donor status")
+# else:
+#   print("You've achieved bronze donor status")
+
+# #EXERCISE
+
+# grade = 12
+
+# if grade >=90:
+#     print("A")
+# elif grade >=80:
+#     print("B")
+# elif grade >=70:
+#     print("C")
+# elif grade >=65:
+#     print("D")
+# else:
+#     print("F")
+# print("Your grade is " + str(grade))
+
+# #REVIEW
+
+# print("I have information for the following planets:\n")
+
+# print("   1. Venus   2. Mars    3. Jupiter")
+# print("   4. Saturn  5. Uranus  6. Neptune\n")
+ 
+# weight = 185
+# planet = 3
+
+# # Write an if statement below:
+# if planet == 1:
+#     weight = weight * 0.91
+# elif planet == 2:
+#     weight = weight * 0.38
+# elif planet == 3:
+#     weight = weight * 2.34
+# elif planet == 4:
+#     weight = weight * 1.06
+# elif planet == 5:
+#     weight = weight * 0.92
+# elif planet == 6:
+#     weight = weight * 1.19
+# else:
+#     print("Invalid planet number")
+#     print("Your weight:", weight)
+    
+
