@@ -1,0 +1,199 @@
+# # working with lists
+
+# # insert
+
+# # store_line.insert(2, "Vikor")
+# # print(store_line) 
+
+# # inserts a new item at the specified index
+
+# front_display_list = ["Mango", "Filet Mignon", "Chocolate Milk"]
+# front_display_list.insert(0, 'Pineapple')
+
+# print(front_display_list)
+
+
+# # .pop
+# # removes the last item in a list
+# # Takes an optional argument that specifies the index of the item to remove
+
+# data_science_topics = ["Machine Learning", "SQL", "Pandas", "Algorithms", "Statistics", "Python 3"]
+# data_science_topics.pop()
+# data_science_topics.pop(3)
+
+# print(data_science_topics)
+
+# #range
+# # creates a list of numbers from 0 to the specified number
+# #  **** creates a range object, not a list *****
+
+# my_range = range(10)
+# print(my_range) # range(0, 10)
+
+# # convert range to list using list()
+
+# print(list(my_range)) # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+
+# zero_to_seven = range(8)
+# print(range) # range(0, 8)
+
+# print(list(zero_to_seven)) # [0, 1, 2, 3, 4, 5, 6, 7]
+
+
+# # skip
+
+# range_five_three = range(5, 15, 3)
+# print(list(range_five_three)) # [5, 8, 11, 14]
+
+# range_diff_five = range(0, 40, 5)
+# print(list(range_diff_five)) # [0, 5, 10, 15, 20, 25, 30, 35]
+
+# # len
+# # returns the number of items in a list
+
+# my_list = [1, 2, 3, 4, 5]
+ 
+# print(len(my_list)) # 5
+
+
+# long_list = [1, 5, 6, 7, -23, 69.5, True, "very", "long", "list", "that", "keeps", "going.", "Let's", "practice", "getting", "the", "length"]
+
+# big_range = range(2, 3000, 100)
+
+
+# long_list_len = len(long_list)
+# print(long_list_len) # 18
+
+# big_range_lenght = len(big_range)
+# print(big_range_lenght) # 300
+
+# # Slicing
+# # returns a list of items from the original list
+
+# letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j"]
+# sliced_list = letters[2,6] # ['c', 'd', 'e', 'f']
+# print(sliced_list) 
+
+
+# ##############
+# suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+# beginning = suitcase[0:4]
+# print(beginning) # ['shirt', 'shirt', 'pants', 'pants']
+
+# beginning = suitcase[0:2]
+
+# middle = suitcase[2:4]
+
+# fruits = ["apple", "cherry", "pineapple", "orange", "mango"]
+# fruits[:n] # returns the first n items in the list
+# fruits[n:] # returns the items in the list starting from index n
+# fruits[-n:] # returns the last n items in the list
+# fruits[-2:] # returns the last two items in the list
+# fruits[:-1] # returns all items in the list except the last one
+
+# ##############################
+
+# suitcase = ["shirt", "shirt", "pants", "pants", "pajamas", "books"]
+
+# last_two_elements = suitcase[-2:]
+# print(last_two_elements) # ['pajamas', 'books']
+
+# slice_off_last_three = suitcase[:-3]
+# print(slice_off_last_three) # ['shirt', 'shirt', 'pants', 'pants']
+
+
+# #counting in a list
+
+# letters = ["m", "i", "s", "s", "i", "s", "s", "i", "p", "p", "i"]
+# num_i = letters.count("i")
+# print(num_i) # 4
+
+# number_collection = [[100, 200], [100, 200], [475, 29], [34, 34]]
+# num_pairs = number_collection.count([100, 200])
+# print(num_pairs) # 2
+
+# votes = ["Jake", "Jake", "Laurie", "Laurie", "Laurie", "Jake", "Jake", "Jake", "Laurie", "Cassie", "Cassie", "Jake", "Jake", "Cassie", "Laurie", "Cassie", "Jake", "Jake", "Cassie", "Laurie"]
+# jake_votes = votes.count("Jake")
+# print(jake_votes) # 9
+
+
+
+# ## Sorting a list
+
+# names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+# names.sort()
+# print(names) # ['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+
+# names.sort(reverse=True)
+# print(names) # ['Xander', 'Willow', 'Giles', 'Buffy', 'Angel']
+# ## modifies the list directly
+
+
+# addresses = ["221 B Baker St.", "42 Wallaby Way", "12 Grimmauld Place", "742 Evergreen Terrace", "1600 Pennsylvania Ave", "10 Downing St."]
+# addresses.sort()
+# print(addresses) # ['10 Downing St.', '12 Grimmauld Place', '1600 Pennsylvania Ave', '221 B Baker St.', '42 Wallaby Way', '742 Evergreen Terrace']
+
+
+# names = ["Ron", "Hermione", "Harry", "Albus", "Sirius"]
+# names.sort()
+# print(names) # ['Albus', 'Harry', 'Hermione', 'Ron', 'Sirius']
+
+# cities = ["London", "Paris", "Rome", "Los Angeles", "New York"]
+# sorted_cities = cities.sort(reverse=True)
+
+# ###########################################################
+
+# ## Sorting Lists 2
+
+# .sorted()
+# # returns a new list with the items from the original list in alphabetical order
+# # does not modify the original list
+
+
+# names = ["Xander", "Buffy", "Angel", "Willow", "Giles"]
+# sorted_names = sorted(names)
+# print(sorted_names) # ['Angel', 'Buffy', 'Giles', 'Willow', 'Xander']
+# print(names) # ['Xander', 'Buffy', 'Angel', 'Willow', 'Giles']
+# # original list is unchanged
+
+# games = ["Portal", "Minecraft", "Pacman", "Tetris", "The Sims", "Pokemon"]
+# games_sorted = sorted(games)
+# print(games_sorted) # ['Minecraft', 'Pacman', 'Pokemon', 'Portal', 'Tetris', 'The Sims']
+# print(games) # ['Portal', 'Minecraft', 'Pacman', 'Tetris', 'The Sims', 'Pokemon']
+
+
+inventory = ["twin bed", "twin bed", "headboard", "queen bed", "king bed", "dresser", "dresser", "table", "table", "nightstand", "nightstand", "king bed", "king bed", "twin bed", "twin bed", "sheets", "sheets", "pillow", "pillow"]
+inventory_len = len(inventory)
+print(inventory_len) # 19
+
+first = inventory[0]
+print(first) # twin bed
+
+last = inventory[-1]
+print(last) # pillow
+
+inventory_2_6 = inventory[2:6]
+print(inventory_2_6) # ['headboard', 'queen bed', 'king bed', 'dresser']
+
+first_3 = inventory[:3]
+print(first_3) # ['twin bed', 'twin bed', 'headboard']
+
+twin_beds = inventory.count("twin bed")
+print(twin_beds) # 4
+
+
+removed_item = inventory.pop(4)  # removes king bed from inventory
+print(removed_item) # king bed
+
+inventory.insert(10, "19th Century Bed Frame")
+print(inventory) # ['twin bed', 'twin bed', 'headboard', 'queen bed', 'dresser', 'dresser', 'table', 'table', 'nightstand', 'nightstand', '19th Century Bed Frame', 'king bed', 'king bed', 'twin bed', 'twin bed', 'sheets', 'sheets', 'pillow', 'pillow']
+
+sorted_inventory = sorted(inventory)
+print(sorted_inventory) # ['19th Century Bed Frame', 'dresser', 'dresser', 'headboard', 'king bed', 'king bed', 'nightstand', 'nightstand', 'pillow', 'pillow', 'queen bed', 'sheets', 'sheets', 'table', 'table', 'twin bed', 'twin bed', 'twin bed', 'twin bed']
+
+#OR
+
+inventory.sort()
+print(inventory) # ['19th Century Bed Frame', 'dresser', 'dresser', 'headboard', 'king bed', 'king bed', 'nightstand', 'nightstand', 'pillow', 'pillow', 'queen bed', 'sheets', 'sheets', 'table', 'table', 'twin bed', 'twin bed', 'twin bed', 'twin bed']
