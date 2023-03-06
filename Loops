@@ -1,0 +1,172 @@
+# # For loops
+# six_steps = range(6)
+ 
+# # six_steps is now a collection with 6 elements:
+# # 0, 1, 2, 3, 4, 5
+# six_steps = range(6)
+
+# for temp in range(6):
+#     print("Learning Loops") # Learning Loops Learning Loops Learning Loops Learning Loops Learning Loops Learning Loops
+
+# # The range() function is a built-in Python function that creates a sequence of numbers. It takes one, two, or three arguments:
+# for temp in range(6):
+#     print('Loop is on iteration number' + str(temp + 1)) # Loop is on iteration number1 Loop is on iteration number2 Loop is on iteration number3 Loop is on iteration number4 Loop is on iteration number5 Loop is on iteration number6
+
+# promise = "I will finish the python loops module!"
+# for promise in range(5):
+#   print("I will finish the python loops module!")    
+
+
+# # While loops
+# count = 0
+# while count <= 3:
+#   # Loop Body
+#   print(count)  # 0 1 2 3
+#   count += 1
+
+
+#   countdown = 10
+# while countdown >= 0:
+#   print(countdown)
+#   countdown -= 1
+ 
+# print('We have liftoff!') # 10 9 8 7 6 5 4 3 2 1 0 We have liftoff!
+
+
+# python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+# lenght = len(python_topics)
+# print(lenght) # 5
+
+# index = 0
+# while index < 0
+#     print(ingrediants[index])
+#     index += 1
+
+# python_topics = ["variables", "control flow", "loops", "modules", "classes"]
+# length = len(python_topics)
+# index = 0
+
+# while index < length:
+#     print('I am learning about ' + python_topics[index])
+#     index += 1
+
+#     print('I am learning about ' + python_topics[index]) # I am learning about variables I am learning about control flow I am learning about loops I am learning about modules I am learning about classe
+
+
+# loop control: break
+
+# for item in items_on_sale: 
+#   if item == "knit dress":
+#     print("Found it")
+
+# finding an item can in a 100,000 item list can be a huge waste of time for the program.
+# Using break can help us save time and resources. To end the search with break
+
+
+# items_on_sale = ["blue shirt", "striped socks", "knit dress", "red headband", "dinosaur onesie"]
+ 
+# print("Checking the sale list!")
+ 
+# for item in items_on_sale:
+#   print(item)
+#   if item == "knit dress":
+#     break
+ 
+# print("End of search!")
+
+
+# dog_breeds_available_for_adoption = ["french_bulldog", "dalmatian", "shihtzu", "poodle", "collie"]
+# dog_breed_I_want = "dalmatian"
+
+# print(dog_breeds_available_for_adoption) # ['french_bulldog', 'dalmatian', 'shihtzu', 'poodle', 'collie']
+
+# for dog_breed in dog_breeds_available_for_adoption:
+#   print(dog_breed)
+#   if dog_breed == dog_breed_I_want:
+#     print("They have the dog I want!")'
+#     break
+
+# control flow: continue
+# big_number_list = [1, 2, -1, 4, -5, 5, 2, -9]
+# for i in big_number_list:
+#   if i <= 0:
+#     continue
+#   print(i) # 1 2 4 5 2
+
+
+# # Nested loops
+# project_teams = [["Ava", "Samantha", "James"], ["Lucille", "Zed"], ["Edgar", "Gabriel"]]
+
+# for team in project_teams:
+#     print(team) # ['Ava', 'Samantha', 'James'] ['Lucille', 'Zed'] ['Edgar', 'Gabriel']
+#     print(team[])   
+
+# sum = 0
+# for i in range(10):
+#   sum += i  
+# print(sum)  # 45   
+
+
+# sales_data = [[12, 17, 22], [2, 10, 3], [5, 12, 13]]
+
+# scoops_sold = 0
+
+# for location in sales_data:
+#   print(location)
+
+
+# project_teams = [
+#     ["Ava", "Samantha", "James"], 
+#     ["Lucille", "Zed"], 
+#     ["Edgar", "Gabriel"]
+#     ]
+# for team in project_teams:
+#     print(team) # ['Ava', 'Samantha', 'James'] ['Lucille', 'Zed'] ['Edgar', 'Gabriel']
+#     for student in team:
+#         print(student) # Ava Samantha James Lucille Zed Edgar Gabriel
+
+# sales_data = [
+# [12, 17, 22], 
+# [2, 10, 3], 
+# [5, 12, 13]
+# ]
+
+# scoops_sold = 0
+
+# for location in sales_data:
+#     print(location)  # [12, 17, 22] [2, 10, 3] [5, 12, 13]
+#     for element in location:
+#         scoops_sold += element
+# print(scoops_sold) # 89
+
+# # Nested loops
+
+
+
+# list comprehension
+# # List comprehension is a way to create a list in one line of code. It is a compact way to create lists.
+# numbers = [2, -1, 79, 33, -45]
+# doubled = [num * 2 for num in numbers]
+# print(doubled) # [4, -2, 158, 66, -90]
+
+# new_list = [<expression> for <element> in <collection>] # <expression> is the element that will be added to the new list. <element> is the element from the collection that will be used to calculate the expression. <collection> is the collection that will be iterated over.
+
+# conditonals in list comprehension
+numbers = [2, -1, 79, 33, -45]
+negative_doubled = [num * 2 for num in numbers if num < 0]
+print(negative_doubled)  # [-2, -90]
+
+
+#  if else in list comprehension
+
+numbers = [2, -1, 79, 33, -45]
+doubled = [num * 2 if num < 0 else num * 3 for num in numbers ]
+print(doubled) # [6, -2, 237, 99, -90]
+
+
+# if else in list comprehension structure
+numbers = [2, -1, 79, 33, -45]
+ 
+no_if   = [num * 2 for num in numbers]
+if_only = [num * 2 for num in numbers if num < 0]
+if_else = [num * 2 if num < 0 else num * 3 for num in numbers]
